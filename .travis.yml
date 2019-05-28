@@ -20,7 +20,7 @@ before_install:
 
 install:
   - export DEBIAN_FRONTEND=noninteractive # suppress warnings about deprecated PostgreSQL versions
-  - sudo apt-get install fakeroot postgresql-server-dev-$PG_SUPPORTED_VERSIONS postgresql-server-dev-all/${DIST:=xenial-pgdg}
+  - sudo apt-get install debhelper fakeroot postgresql-server-dev-$PG_SUPPORTED_VERSIONS postgresql-server-dev-all/${DIST:=xenial-pgdg}
   # install PostgreSQL $PG_SUPPORTED_VERSIONS if not there yet
   - |
     if [ ! -x /usr/lib/postgresql/$PG_SUPPORTED_VERSIONS/bin/postgres ]; then

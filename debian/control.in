@@ -1,0 +1,21 @@
+Source: postgresql-hamradio
+Section: database
+Priority: optional
+Maintainer: Debian PostgreSQL Maintainers <team+postgresql@tracker.debian.org>
+Uploaders: Christoph Berg <myon@debian.org>,
+Build-Depends: debhelper (>= 9), postgresql-server-dev-all (>= 153~)
+Standards-Version: 4.3.0
+Vcs-Browser: https://github.com/df7cb/postgresql-hamradio
+Vcs-Git: https://github.com/df7cb/postgresql-hamradio.git
+Homepage: https://github.com/df7cb/postgresql-hamradio
+
+Package: postgresql-PGVERSION-hamradio
+Architecture: any
+Depends: postgresql-PGVERSION, postgresql-PGVERSION-postgis, ${misc:Depends}, ${shlibs:Depends}
+Description: Ham radio data types, functions, and tables for PostgreSQL
+ This PostgreSQL extension provides data types, functions, and tables for
+ storing and working with ham radio contacts.
+ .
+  * data types `call`, `band`, and `locator`
+  * functions to convert these types
+  * locator and country/prefix tables

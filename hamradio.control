@@ -1,0 +1,4 @@
+default_version = '1'
+comment = 'ham radio extension'
+relocatable = true
+requires = 'postgis'

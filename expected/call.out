@@ -1,0 +1,29 @@
+SELECT 'DF7CB'::call;
+ call  
+-------
+ DF7CB
+(1 row)
+
+SELECT 'DF7CB/P'::call;
+  call   
+---------
+ DF7CB/P
+(1 row)
+
+SELECT 'F/DF7CB/P'::call;
+   call    
+-----------
+ F/DF7CB/P
+(1 row)
+
+SELECT 'DE-1234'::call; -- SWL
+  call   
+---------
+ DE-1234
+(1 row)
+
+-- errors
+SELECT 'df7cb'::call;
+ERROR:  value for domain call violates check constraint "valid_callsign"
+SELECT 'DE 1234'::call;
+ERROR:  value for domain call violates check constraint "valid_callsign"

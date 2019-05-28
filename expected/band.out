@@ -1,0 +1,79 @@
+SELECT '1.8'::numeric::band;
+ band 
+------
+ 160m
+(1 row)
+
+SELECT '3.5'::numeric::band;
+ band 
+------
+ 80m
+(1 row)
+
+SELECT '5.3'::numeric::band;
+ band 
+------
+ 60m
+(1 row)
+
+SELECT '7'::numeric::band;
+ band 
+------
+ 40m
+(1 row)
+
+SELECT '10.1'::numeric::band;
+ band 
+------
+ 30m
+(1 row)
+
+SELECT '14'::numeric::band;
+ band 
+------
+ 20m
+(1 row)
+
+SELECT '18.1'::numeric::band;
+ band 
+------
+ 17m
+(1 row)
+
+SELECT '21'::numeric::band;
+ band 
+------
+ 15m
+(1 row)
+
+SELECT '24.9'::numeric::band;
+ band 
+------
+ 12m
+(1 row)
+
+SELECT '28'::numeric::band;
+ band 
+------
+ 10m
+(1 row)
+
+SELECT '144'::numeric::band;
+ band 
+------
+ 2m
+(1 row)
+
+SELECT '430'::numeric::band;
+ band 
+------
+ 70cm
+(1 row)
+
+-- frequency out of band
+SELECT '100'::numeric::band;
+ band 
+------
+ 
+(1 row)
+

@@ -1,0 +1,5 @@
+postgresql-hamradio (1-1) UNRELEASED; urgency=medium
+
+  * Initial release.
+
+ -- Christoph Berg <myon@debian.org>  Tue, 28 May 2019 15:41:19 +0200
